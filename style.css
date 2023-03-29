@@ -43,7 +43,7 @@ nav a {
     color: #CBB26A;
 }
 
-.nav .logo {
+.nav.logo {
     font-size: 1.5rem;
     height: 100px;
     width: 150px;
