@@ -219,9 +219,34 @@ footer a {
     color: #be9e44;
     }
 
-    .offer-image {
-        max-width: 80%; /* Set the maximum width to 80% of the container */
-        max-height: 80%; /* Set the maximum height to 80% of the container */
-        height: auto; /* Maintain the aspect ratio */
-        width: auto; /* Maintain the aspect ratio */
-    }
+/* Offer Details */
+#offer-details {
+    background-color: #d8c690; /* Change the background color to match the color palette */
+    padding: 2rem;
+}
+
+.offer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offer-info img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.offer-text {
+    color: #0d0d0d; /* Change the text color to match the color palette */
+}
+
+.buy-button {
+    background-color: #CBB26A; /* Change the button background color to match the color palette */
+    color: #0d0d0d; /* Change the button text color to match the color palette */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
