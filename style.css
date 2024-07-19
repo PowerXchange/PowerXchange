@@ -15,21 +15,29 @@
 
 body {
     font-family: var(--scroll-font);
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--scroll-text-color);
     -webkit-font-smoothing: antialiased;
+    font-size: 18px; /* Increased base font size */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+h1 { font-size: 3.5rem; } /* Increased from 3rem */
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.2rem; }
+
 /* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2.5rem; /* Increased padding */
     background-color: var(--scroll-bg-color);
     border-bottom: 1px solid #e5e7eb;
 }
@@ -40,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin-left: 2.5rem; /* Increased spacing */
 }
 
 nav a {
@@ -48,6 +56,7 @@ nav a {
     color: var(--scroll-text-color);
     font-weight: 500;
     transition: color 0.3s ease;
+    font-size: 1.2rem; /* Increased from implicit 18px */
 }
 
 nav a:hover {
@@ -55,13 +64,13 @@ nav a:hover {
 }
 
 .nav.logo {
-    height: 100px;
-    width: 220px;
+    height: 120px; /* Increased from 100px */
+    width: 264px; /* Increased from 220px to maintain aspect ratio */
 }
 
 /* Sections */
 section {
-    padding: 4rem 2rem;
+    padding: 5rem 2.5rem; /* Increased padding */
 }
 
 #hero {
@@ -70,9 +79,14 @@ section {
 }
 
 #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 4rem; /* Increased from 3.5rem */
+    margin-bottom: 1.5rem; /* Increased from 1rem */
     color: var(--scroll-text-color);
+}
+
+#hero p {
+    font-size: 1.5rem; /* Increased hero description text */
+    margin-bottom: 2rem;
 }
 
 .cta {
@@ -80,9 +94,9 @@ section {
     background-color: var(--powerx-primary);
     color: #fff;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 2rem; /* Increased padding */
     border-radius: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Increased from 1.1rem */
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
@@ -99,24 +113,33 @@ section {
 .steps {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 2.5rem; /* Increased from 2rem */
 }
 
 .step {
     flex: 1;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem; /* Increased from 2rem */
     background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.step h3 {
+    margin-bottom: 1rem;
+}
+
+.step p {
+    font-size: 1.1rem; /* Slightly increased step description text */
 }
 
 /* Footer */
 footer {
     background-color: var(--powerx-dark);
     color: #fff;
-    padding: 2rem;
+    padding: 2.5rem; /* Increased from 2rem */
     text-align: center;
+    font-size: 1.1rem; /* Increased footer text size */
 }
 
 footer a {
