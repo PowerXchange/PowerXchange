@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerXchange - Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.png" style="height: 100px; width: 220px;"></a>
+            <ul>
+                <li><a href="how-it-works.html">How it works</a></li>
+                <!--<li><a href="#benefits">Benefits</a></li>-->
+                <li><a href="installation-services.html">Installation</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="offer-details.html">Offer Details</a></li>
+                <!--<li><a href="#contact">Contact</a></li>-->
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marketplace Filters -->
+    <section id="marketplace-filters">
+        <h2>Find Energy Offers</h2>
+        <form>
+            <label for="energy-type" style="margin-top: 10px;">Energy Type:</label>
+            <select id="energy-type" name="energy-type" class="offer">
+                <option value="solar">Solar</option>
+                <option value="wind">Wind</option>
+                <option value="hydro">Hydro</option>
+            </select>
+            
+            <label for="location" style="margin-top: 10px;">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" class="offer">
+
+            <label for="price-range" style="margin-top: 10px;">Price Range:</label>
+            <input type="range" id="price-range" name="price-range" min="0" max="100" value="50" class="offer">
+
+            <a href="#" class="cta">Submit</a>
+        </form>
+    </section>
+
+    <!-- Energy Offers List -->
+    <section id="energy-offers">
+        <h2>Available Energy Offers</h2>
+        <div class="offer">
+            <h3>Solar Energy Offer</h3>
+            <p>Location: Johannesburg</p>
+            <p>Price: R2.00/kWh</p>
+            <p>Seller: John Doe</p>
+            <p>Rating: ★★★★☆</p>
+            <a href="offer-details.html" class="view-details">View Details</a>
+        </div>
+
+        <!-- Add more energy offers following the same structure as above -->
+
+    </section>
+
+    <!-- Pagination -->
+    <nav id="pagination">
+        <a href="#" class="prev-page">Previous</a>
+        <a href="#" class="page-number">1</a>
+        <a href="#" class="page-number">2</a>
+        <a href="#" class="page-number">3</a>
+        <a href="#" class="next-page">Next</a>
+    </nav>
+
+
+</body>
+</html>
