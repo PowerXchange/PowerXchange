@@ -7,16 +7,8 @@
 
 ## Projects
 
-### 🌟 Featured Project: RemitEase
-RemitEase stands out from competitors through its integration of Scroll's zkEVM Layer 2 technology, which uniquely combines low transaction fees, high throughput, and enhanced security using zero-knowledge proofs. Unlike traditional remittance services that charge high fees and have slow transfer times, RemitEase offers:
-
-- **Cost-Effectiveness:** Leveraging Scroll's Layer 2 infrastructure significantly reduces transaction costs, making remittances affordable for small and frequent transfers.
-- **Speed:** Scroll's high throughput ensures rapid transaction processing, which is crucial for users who rely on timely fund transfers.
-- **Security and Privacy:** The use of zero-knowledge proofs ensures that transactions are both secure and private, maintaining user confidentiality and preventing fraud.
-- **User-Friendly Experience:** By supporting smart contracts, RemitEase can integrate seamlessly with mobile applications, providing an intuitive and accessible user interface for remittance services.
-- **Focus on Emerging Markets:** Specifically targeting the African remittance market, RemitEase addresses the unique challenges of high fees, slow transfer times, and security concerns prevalent in these regions, thus making a substantial positive impact on the lives of the beneficiaries.
-
-This combination of cutting-edge technology and targeted problem-solving makes RemitEase a novel and powerful solution in the remittance industry.
+### 🌟 Featured Project: PowerXchange
+PowerXchange stands out by integrating advanced zkEVM technology to enhance both privacy and transparency in energy trading. Our unique focus on community-driven energy projects empowers local communities to produce and trade renewable energy, ensuring equitable market access. Unlike competitors, PowerXchange offers real-time, tamper-proof energy production tracking, reducing costs by eliminating intermediaries and ensuring the authenticity of renewable energy credits. This novel approach combines blockchain technology with sustainable energy practices, promoting widespread adoption and trust within the Scroll ecosystem.  
 
 ## 👩🏻‍💻📓✍🏻💡 Skills
 
