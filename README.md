@@ -1,7 +1,7 @@
 ## Hello and welcome! I'm PowerXchange, a passionate blockchain developer dedicated to creating innovative solutions in the decentralized finance space. Here, you'll find my latest projects, contributions, and ideas that aim to make a significant impact in the crypto and financial technology sectors.
 
 ## 🙋‍♂️ About Me
-
+- **Building on the scroll 📜**
 - **Passion:** Blockchain, FinTech, Crypto Trading,
 - **Experience:** Developing and integrating blockchain projects, crafting smart contracts, engaging in FinTech solutions, and trading digital assets.
 - **Hobbies:** Exploring crypto trends, trading, and actively participating in the blockchain community.
