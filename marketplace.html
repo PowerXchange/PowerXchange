@@ -44,114 +44,51 @@
                 <input type="number" id="price-range" name="price-range" min="0" step="0.1" value="5">
             </div>
             
-            <button type="submit" class="cta">Apply Filters</button>
+            <button type="submit" class="cta filter-button">Apply Filters</button>
         </form>
     </section>
-
-    <!-- Sort Options -->
-    <div id="sort-options">
-        <label for="sort-by">Sort by:</label>
-        <select id="sort-by">
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="rating">Rating</option>
-        </select>
-    </div>
 
     <!-- Energy Offers List -->
     <section id="energy-offers">
         <h2>Available Energy Offers</h2>
         <div class="offers-grid">
-            <!-- Offer 1 -->
             <div class="offer">
-                <h3>Solar Energy Offer</h3>
-                <p>Location: Johannesburg</p>
-                <p>Price: R2.00/kWh</p>
-                <p>Seller: John Doe</p>
-                <p>Rating: ★★★★☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
+                <img src="solar-panel.jpg" alt="Solar Energy Offer">
+                <div class="offer-details">
+                    <h3>Solar Energy Offer</h3>
+                    <p><strong>Energy Type:</strong> Solar</p>
+                    <p><strong>Location:</strong> Johannesburg</p>
+                    <p><strong>Price:</strong> R2.00/kWh</p>
+                    <p>Seller: John Doe</p>
+                    <p>Rating: ★★★★☆</p>
+                    <a href="offer-details.html" class="view-details">View Details</a>
+                </div>
             </div>
-            <!-- Offer 2 -->
             <div class="offer">
-                <h3>Wind Energy Offer</h3>
-                <p>Location: Cape Town</p>
-                <p>Price: R1.80/kWh</p>
-                <p>Seller: Jane Smith</p>
-                <p>Rating: ★★★★★</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
+                <img src="wind-turbine.jpg" alt="Wind Energy Offer">
+                <div class="offer-details">
+                    <h3>Wind Energy Offer</h3>
+                    <p><strong>Energy Type:</strong> Wind</p>
+                    <p><strong>Location:</strong> Cape Town</p>
+                    <p><strong>Price:</strong> R1.80/kWh</p>
+                    <p>Seller: Jane Smith</p>
+                    <p>Rating: ★★★★★</p>
+                    <a href="offer-details.html" class="view-details">View Details</a>
+                </div>
             </div>
-            <!-- Offer 3 -->
             <div class="offer">
-                <h3>Hydro Energy Offer</h3>
-                <p>Location: Durban</p>
-                <p>Price: R2.20/kWh</p>
-                <p>Seller: Mike Johnson</p>
-                <p>Rating: ★★★☆☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
+                <img src="hydro-plant.jpg" alt="Hydro Energy Offer">
+                <div class="offer-details">
+                    <h3>Hydro Energy Offer</h3>
+                    <p><strong>Energy Type:</strong> Hydro</p>
+                    <p><strong>Location:</strong> Durban</p>
+                    <p><strong>Price:</strong> R2.20/kWh</p>
+                    <p>Seller: Mike Johnson</p>
+                    <p>Rating: ★★★☆☆</p>
+                    <a href="offer-details.html" class="view-details">View Details</a>
+                </div>
             </div>
-            <!-- Offer 4 -->
-            <div class="offer">
-                <h3>Solar Energy Offer</h3>
-                <p>Location: Pretoria</p>
-                <p>Price: R1.90/kWh</p>
-                <p>Seller: Sarah Brown</p>
-                <p>Rating: ★★★★☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
-            <!-- Offer 5 -->
-            <div class="offer">
-                <h3>Wind Energy Offer</h3>
-                <p>Location: Port Elizabeth</p>
-                <p>Price: R2.10/kWh</p>
-                <p>Seller: David Wilson</p>
-                <p>Rating: ★★★★★</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
-            <!-- Offer 6 -->
-            <div class="offer">
-                <h3>Solar Energy Offer</h3>
-                <p>Location: Bloemfontein</p>
-                <p>Price: R2.05/kWh</p>
-                <p>Seller: Emma Davis</p>
-                <p>Rating: ★★★☆☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
-            <!-- Offer 7 -->
-            <div class="offer">
-                <h3>Hydro Energy Offer</h3>
-                <p>Location: East London</p>
-                <p>Price: R2.15/kWh</p>
-                <p>Seller: Chris Taylor</p>
-                <p>Rating: ★★★★☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
-            <!-- Offer 8 -->
-            <div class="offer">
-                <h3>Wind Energy Offer</h3>
-                <p>Location: Kimberley</p>
-                <p>Price: R1.95/kWh</p>
-                <p>Seller: Lisa Anderson</p>
-                <p>Rating: ★★★★★</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
-            <!-- Offer 9 -->
-            <div class="offer">
-                <h3>Solar Energy Offer</h3>
-                <p>Location: Nelspruit</p>
-                <p>Price: R2.25/kWh</p>
-                <p>Seller: Robert Martin</p>
-                <p>Rating: ★★★☆☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
-            <!-- Offer 10 -->
-            <div class="offer">
-                <h3>Hydro Energy Offer</h3>
-                <p>Location: Polokwane</p>
-                <p>Price: R2.30/kWh</p>
-                <p>Seller: Emily White</p>
-                <p>Rating: ★★★★☆</p>
-                <a href="offer-details.html" class="view-details">View Details</a>
-            </div>
+            <!-- Add 7 more offer divs here with different details -->
         </div>
     </section>
 
