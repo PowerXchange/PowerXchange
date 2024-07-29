@@ -153,18 +153,18 @@ footer a:hover {
     color: var(--powerx-primary);
 }
 
-/* Add this to your existing CSS file */
+/* Market Place */
 
 #marketplace-filters {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2.5rem;
 }
 
 #filter-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.5rem;
     align-items: flex-end;
 }
 
@@ -173,23 +173,53 @@ footer a:hover {
     min-width: 200px;
 }
 
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
 .filter-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: var(--powerx-primary);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: var(--powerx-secondary);
+}
+
+#energy-offers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
 }
 
 .offers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 2rem;
 }
 
 .offer {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .offer img {
@@ -199,26 +229,60 @@ footer a:hover {
 }
 
 .offer-details {
-    padding: 15px;
+    padding: 1.5rem;
 }
 
 .offer-details h3 {
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .offer-details p {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .view-details {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #007bff;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--powerx-primary);
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
 }
+
+.view-details:hover {
+    background-color: var(--powerx-secondary);
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+#pagination a {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: var(--scroll-text-color);
+    transition: background-color 0.3s ease;
+}
+
+#pagination a:hover {
+    background-color: #f3f4f6;
+}
+
+#pagination .page-number.active {
+    background-color: var(--powerx-primary);
+    color: white;
+    border-color: var(--powerx-primary);
+}
+
+
 
 /* Styles for the homepage */
 #hero, #scroll-network, #how-it-works, #benefits {
