@@ -5,69 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerXchange - Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
-            <a href="index.html"><img src="logo.png" style="height: 100px; width: 220px;"></a>
+            <a href="index.html"><img src="logo.png" alt="PowerXchange Logo" style="height: 100px; width: 220px;"></a>
             <ul>
                 <li><a href="how-it-works.html">How it works</a></li>
-                <!--<li><a href="#benefits">Benefits</a></li>-->
                 <li><a href="installation-services.html">Installation</a></li>
                 <li><a href="marketplace.html">Marketplace</a></li>
                 <li><a href="offer-details.html">Offer Details</a></li>
-                <!--<li><a href="#contact">Contact</a></li>-->
-                
             </ul>
         </nav>
     </header>
 
     <!-- Dashboard -->
     <section id="dashboard">
-        <h2>Welcome, John Doe</h2>
-        <div class="stats">
-            <div class="stat">
-                <h3>Total Energy Generated</h3>
-                <p>100 kW</p>
-            </div>
-            <div class="stat">
-                <h3>Total Energy Sold</h3>
-                <p>50 kW</p>
-            </div>
-            <div class="stat">
-                <h3>Total Revenue</h3>
-                <p>R5000</p>
-            </div>
+        <div class="dashboard-header">
+            <h2>Welcome, John Doe</h2>
+            <button class="cta">Create New Offer</button>
         </div>
 
-        <!-- Energy Usage Chart -->
-        <div id="energy-usage-chart">
-            <!-- Replace with actual chart embedding code -->
-            <img src="Graph.png" alt="Chart placeholder" style="height: 400px; width: 100%;">
-        </div>
+        <div class="dashboard-grid">
+            <div class="dashboard-column">
+                <div class="stats-container">
+                    <div class="stat">
+                        <h3>Total Energy Generated</h3>
+                        <p>100 kW</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Total Energy Sold</h3>
+                        <p>50 kW</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Total Revenue</h3>
+                        <p>R5000</p>
+                    </div>
+                </div>
 
-        <!-- Energy Offers -->
-        <div id="energy-offers">
-            <h3>Your Energy Offers</h3>
-            <div class="offer">
-                <h4>Solar Energy Offer</h4>
-                <p>Price: R2.00/kWh</p>
-                <p>Status: Active</p>
-                <a href="#" class="edit-button">Edit</a>
-                <a href="#" class="delete-button">Delete</a>
+                <!-- Energy Usage Chart -->
+                <div class="chart-container">
+                    <h3>Energy Usage Over Time</h3>
+                    <canvas id="energy-usage-chart"></canvas>
+                </div>
             </div>
 
-            <!-- Add more energy offers following the same structure as above -->
-        </div>
+            <div class="dashboard-column">
+                <!-- Energy Offers -->
+                <div id="energy-offers">
+                    <h3>Your Energy Offers</h3>
+                    <div class="offer">
+                        <h4>Solar Energy Offer</h4>
+                        <p>Price: R2.00/kWh</p>
+                        <p>Status: <span class="status-active">Active</span></p>
+                        <div class="offer-actions">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                    <div class="offer">
+                        <h4>Wind Energy Offer</h4>
+                        <p>Price: R1.80/kWh</p>
+                        <p>Status: <span class="status-pending">Pending</span></p>
+                        <div class="offer-actions">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Carbon Credits -->
-        <div id="carbon-credits">
-            <h3>Your Carbon Credits</h3>
-            <p>You have earned 100 carbon credits</p>
-            <a href="#" class="cta">Redeem Credits</a>
+                <!-- Carbon Credits -->
+                <div id="carbon-credits">
+                    <h3>Your Carbon Credits</h3>
+                    <div class="carbon-credit-info">
+                        <p>You have earned <strong>100</strong> carbon credits</p>
+                        <progress value="100" max="500"></progress>
+                        <p>500 credits needed for next reward</p>
+                    </div>
+                    <button class="cta">Redeem Credits</button>
+                </div>
+            </div>
         </div>
     </section>
 
+    <script src="dashboard.js"></script>
 </body>
 </html>
