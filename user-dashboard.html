@@ -6,6 +6,7 @@
     <title>PowerXchange - Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
@@ -18,73 +19,144 @@
                 <li><a href="marketplace.html">Marketplace</a></li>
                 <li><a href="offer-details.html">Offer Details</a></li>
             </ul>
+            <div class="user-menu">
+                <img src="user-avatar.jpg" alt="User Avatar" class="avatar">
+                <span>John Doe</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </nav>
     </header>
 
     <!-- Dashboard -->
     <section id="dashboard">
         <div class="dashboard-header">
-            <h2>Welcome, John Doe</h2>
-            <button class="cta">Create New Offer</button>
+            <h2>Dashboard</h2>
+            <div class="date-range">
+                <label for="date-range-select">View data for:</label>
+                <select id="date-range-select">
+                    <option value="7">Last 7 days</option>
+                    <option value="30">Last 30 days</option>
+                    <option value="90">Last 90 days</option>
+                    <option value="365">Last year</option>
+                </select>
+            </div>
         </div>
 
         <div class="dashboard-grid">
-            <div class="dashboard-column">
+            <div class="dashboard-column main-column">
                 <div class="stats-container">
                     <div class="stat">
-                        <h3>Total Energy Generated</h3>
-                        <p>100 kW</p>
+                        <i class="fas fa-bolt"></i>
+                        <div>
+                            <h3>Total Energy Generated</h3>
+                            <p>100 kW</p>
+                        </div>
                     </div>
                     <div class="stat">
-                        <h3>Total Energy Sold</h3>
-                        <p>50 kW</p>
+                        <i class="fas fa-exchange-alt"></i>
+                        <div>
+                            <h3>Total Energy Sold</h3>
+                            <p>50 kW</p>
+                        </div>
                     </div>
                     <div class="stat">
-                        <h3>Total Revenue</h3>
-                        <p>R5000</p>
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <h3>Total Revenue</h3>
+                            <p>R5000</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3>Carbon Credits Earned</h3>
+                            <p>100</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Energy Usage Chart -->
                 <div class="chart-container">
-                    <h3>Energy Usage Over Time</h3>
+                    <h3>Energy Production vs Consumption</h3>
                     <canvas id="energy-usage-chart"></canvas>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="recent-transactions">
+                    <h3>Recent Transactions</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-07-28</td>
+                                <td>Energy Sale</td>
+                                <td>10 kW</td>
+                                <td><span class="status-complete">Complete</span></td>
+                            </tr>
+                            <tr>
+                                <td>2023-07-27</td>
+                                <td>Energy Purchase</td>
+                                <td>5 kW</td>
+                                <td><span class="status-pending">Pending</span></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <div class="dashboard-column">
+            <div class="dashboard-column side-column">
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <button class="cta"><i class="fas fa-plus"></i> Create New Offer</button>
+                    <button class="secondary-cta"><i class="fas fa-history"></i> View Transaction History</button>
+                    <button class="secondary-cta"><i class="fas fa-cog"></i> Manage Energy Systems</button>
+                </div>
+
                 <!-- Energy Offers -->
                 <div id="energy-offers">
-                    <h3>Your Energy Offers</h3>
+                    <h3>Your Active Energy Offers</h3>
                     <div class="offer">
                         <h4>Solar Energy Offer</h4>
                         <p>Price: R2.00/kWh</p>
+                        <p>Available: 20 kW</p>
                         <p>Status: <span class="status-active">Active</span></p>
                         <div class="offer-actions">
-                            <button class="edit-button">Edit</button>
-                            <button class="delete-button">Delete</button>
+                            <button class="edit-button"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="delete-button"><i class="fas fa-trash-alt"></i> Delete</button>
                         </div>
                     </div>
                     <div class="offer">
                         <h4>Wind Energy Offer</h4>
                         <p>Price: R1.80/kWh</p>
+                        <p>Available: 15 kW</p>
                         <p>Status: <span class="status-pending">Pending</span></p>
                         <div class="offer-actions">
-                            <button class="edit-button">Edit</button>
-                            <button class="delete-button">Delete</button>
+                            <button class="edit-button"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="delete-button"><i class="fas fa-trash-alt"></i> Delete</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Carbon Credits -->
                 <div id="carbon-credits">
-                    <h3>Your Carbon Credits</h3>
+                    <h3>Carbon Credits</h3>
                     <div class="carbon-credit-info">
                         <p>You have earned <strong>100</strong> carbon credits</p>
-                        <progress value="100" max="500"></progress>
-                        <p>500 credits needed for next reward</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%;"></div>
+                        </div>
+                        <p>400 more credits needed for next reward</p>
                     </div>
-                    <button class="cta">Redeem Credits</button>
+                    <button class="cta"><i class="fas fa-gift"></i> Redeem Credits</button>
                 </div>
             </div>
         </div>
