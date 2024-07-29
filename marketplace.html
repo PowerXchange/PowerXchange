@@ -6,177 +6,7 @@
     <title>PowerXchange - Marketplace</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        :root {
-            --scroll-font: TransSansPremium, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-            --scroll-text-color: rgb(17, 24, 39);
-            --scroll-bg-color: #fff;
-            --powerx-primary: #be9e44;
-            --powerx-secondary: #CBB26A;
-            --powerx-dark: #0d0d0d;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--scroll-font);
-            line-height: 1.6;
-            color: var(--scroll-text-color);
-            -webkit-font-smoothing: antialiased;
-            font-size: 18px; /* Increased base font size */
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 600;
-        }
-
-        h1 { font-size: 3.5rem; } /* Increased from 3rem */
-        h2 { font-size: 2.8rem; }
-        h3 { font-size: 2.2rem; }
-        h4 { font-size: 1.8rem; }
-        h5 { font-size: 1.5rem; }
-        h6 { font-size: 1.2rem; }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2.5rem; /* Increased padding */
-            background-color: var(--scroll-bg-color);
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            margin-left: 2.5rem; /* Increased spacing */
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--scroll-text-color);
-            font-weight: 500;
-            transition: color 0.3s ease;
-            font-size: 1.2rem; /* Increased from implicit 18px */
-        }
-
-        nav a:hover {
-            color: var(--powerx-primary);
-        }
-
-        .nav.logo {
-            height: 120px; /* Increased from 100px */
-            width: 264px; /* Increased from 220px to maintain aspect ratio */
-        }
-
-        .user-menu {
-            display: flex;
-            align-items: center;
-            color: #fff;
-        }
-
-        .user-menu .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        /* Marketplace Filters */
-        #marketplace-filters {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2.5rem;
-        }
-
-        #filter-form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            align-items: flex-end;
-        }
-
-        .filter-group {
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .filter-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .filter-group select,
-        .filter-group input {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-        }
-
-        .filter-button {
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            background-color: var(--powerx-primary);
-            color: #fff;
-            border: none;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .filter-button:hover {
-            background-color: var(--powerx-secondary);
-        }
-
-        #energy-offers {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2.5rem;
-        }
-
-        .offers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .offer {
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-        }
-
-        .offer img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .offer-details {
-            padding: 1.5rem;
-        }
-
-        .offer-details h3 {
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-
-        .offer-details p {
-            margin: 0.5rem 0;
-        }
-
-        .view-details {
+            .view-details {
             display: inline-block;
             margin-top: 1rem;
             padding: 0.75rem 1.5rem;
@@ -187,100 +17,19 @@
             transition: background-color 0.3s ease;
             cursor: pointer;
         }
-
-        .view-details:hover {
-            background-color: var(--powerx-secondary);
-        }
-
-        #pagination {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2.5rem;
-        }
-
-        #pagination a {
-            padding: 0.5rem 1rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.25rem;
-            text-decoration: none;
-            color: var(--scroll-text-color);
-            transition: background-color 0.3s ease;
-        }
-
-        #pagination a:hover {
-            background-color: #f3f4f6;
-        }
-
-        #pagination .page-number.active {
-            background-color: var(--powerx-primary);
-            color: white;
-            border-color: var(--powerx-primary);
-        }
-
-        /* Styles for the homepage */
-        #hero, #scroll-network, #how-it-works, #benefits {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .steps {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .step {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .cta {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #CBB26A;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-
-        #benefits ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #benefits li {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
-            <a href="index.html"><img src="logo.png" alt="PowerXchange Logo" class="nav logo"></a>
+            <a href="index.html"><img src="logo.png" alt="PowerXchange Logo" style="height: 100px; width: 220px;"></a>
             <ul>
                 <li><a href="how-it-works.html">How it works</a></li>
                 <li><a href="installation-services.html">Installation</a></li>
                 <li><a href="marketplace.html">Marketplace</a></li>
                 <li><a href="offer-details.html">Offer Details</a></li>
             </ul>
-            <div class="user-menu">
-                <img src="avatar.jpg" alt="User Avatar" class="avatar">
-                <span>John Doe</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
         </nav>
     </header>
 
@@ -316,7 +65,7 @@
     <section id="energy-offers">
         <h2>Available Energy Offers</h2>
         <div class="offers-grid">
-            <div class="offer" data-type="Solar" data-location="Johannesburg" data-price="2.00" data-seller="John Doe" data-rating="★★★★☆" data-img="solar-panel.jpg" data-availability="100 kW">
+            <div class="offer">
                 <img src="solar-panel.jpg" alt="Solar Energy Offer">
                 <div class="offer-details">
                     <h3>Solar Energy Offer</h3>
@@ -328,7 +77,7 @@
                     <a href="offer-details.html" class="view-details">View Details</a>
                 </div>
             </div>
-            <div class="offer" data-type="Wind" data-location="Cape Town" data-price="1.80" data-seller="Jane Smith" data-rating="★★★★★" data-img="wind-turbine.jpg" data-availability="80 kW">
+            <div class="offer">
                 <img src="wind-turbine.jpg" alt="Wind Energy Offer">
                 <div class="offer-details">
                     <h3>Wind Energy Offer</h3>
@@ -340,7 +89,7 @@
                     <a href="offer-details.html" class="view-details">View Details</a>
                 </div>
             </div>
-            <div class="offer" data-type="Hydro" data-location="Durban" data-price="2.20" data-seller="Mike Johnson" data-rating="★★★☆☆" data-img="hydro-plant.jpg" data-availability="50 kW">
+            <div class="offer">
                 <img src="hydro-plant.jpg" alt="Hydro Energy Offer">
                 <div class="offer-details">
                     <h3>Hydro Energy Offer</h3>
@@ -352,7 +101,7 @@
                     <a href="offer-details.html" class="view-details">View Details</a>
                 </div>
             </div>
-            <!-- Add more offers here -->
+            <!-- Add 7 more offer divs here with different details -->
         </div>
     </section>
 
@@ -367,24 +116,6 @@
         <a href="#" class="next-page">Next</a>
     </nav>
 
-    <script>
-        document.querySelectorAll('.view-details').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const offerElement = e.target.closest('.offer');
-                const offerDetails = {
-                    type: offerElement.getAttribute('data-type'),
-                    location: offerElement.getAttribute('data-location'),
-                    price: offerElement.getAttribute('data-price'),
-                    seller: offerElement.getAttribute('data-seller'),
-                    rating: offerElement.getAttribute('data-rating'),
-                    img: offerElement.getAttribute('data-img'),
-                    availability: offerElement.getAttribute('data-availability'),
-                };
-                localStorage.setItem('offerDetails', JSON.stringify(offerDetails));
-                window.location.href = e.target.getAttribute('href');
-            });
-        });
-    </script>
+    <script src="marketplace.js"></script>
 </body>
 </html>
