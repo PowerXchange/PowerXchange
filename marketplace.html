@@ -52,7 +52,7 @@
     <section id="energy-offers">
         <h2>Available Energy Offers</h2>
         <div class="offers-grid">
-            <div class="offer" data-type="Solar" data-location="Johannesburg" data-price="2.00" data-seller="John Doe" data-rating="★★★★☆" data-img="solar-panel.jpg" data-availability="100 kW">
+            <div class="offer">
                 <img src="solar-panel.jpg" alt="Solar Energy Offer">
                 <div class="offer-details">
                     <h3>Solar Energy Offer</h3>
@@ -64,7 +64,7 @@
                     <a href="offer-details.html" class="view-details">View Details</a>
                 </div>
             </div>
-            <div class="offer" data-type="Wind" data-location="Cape Town" data-price="1.80" data-seller="Jane Smith" data-rating="★★★★★" data-img="wind-turbine.jpg" data-availability="80 kW">
+            <div class="offer">
                 <img src="wind-turbine.jpg" alt="Wind Energy Offer">
                 <div class="offer-details">
                     <h3>Wind Energy Offer</h3>
@@ -76,7 +76,7 @@
                     <a href="offer-details.html" class="view-details">View Details</a>
                 </div>
             </div>
-            <div class="offer" data-type="Hydro" data-location="Durban" data-price="2.20" data-seller="Mike Johnson" data-rating="★★★☆☆" data-img="hydro-plant.jpg" data-availability="50 kW">
+            <div class="offer">
                 <img src="hydro-plant.jpg" alt="Hydro Energy Offer">
                 <div class="offer-details">
                     <h3>Hydro Energy Offer</h3>
@@ -88,28 +88,21 @@
                     <a href="offer-details.html" class="view-details">View Details</a>
                 </div>
             </div>
-            <!-- Add more offers here -->
+            <!-- Add 7 more offer divs here with different details -->
         </div>
     </section>
 
-    <script>
-        document.querySelectorAll('.view-details').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const offerElement = e.target.closest('.offer');
-                const offerDetails = {
-                    type: offerElement.getAttribute('data-type'),
-                    location: offerElement.getAttribute('data-location'),
-                    price: offerElement.getAttribute('data-price'),
-                    seller: offerElement.getAttribute('data-seller'),
-                    rating: offerElement.getAttribute('data-rating'),
-                    img: offerElement.getAttribute('data-img'),
-                    availability: offerElement.getAttribute('data-availability'),
-                };
-                localStorage.setItem('offerDetails', JSON.stringify(offerDetails));
-                window.location.href = e.target.getAttribute('href');
-            });
-        });
-    </script>
+    <!-- Pagination -->
+    <nav id="pagination">
+        <a href="#" class="prev-page">Previous</a>
+        <a href="#" class="page-number">1</a>
+        <a href="#" class="page-number">2</a>
+        <a href="#" class="page-number">3</a>
+        <a href="#" class="page-number">4</a>
+        <a href="#" class="page-number">5</a>
+        <a href="#" class="next-page">Next</a>
+    </nav>
+
+    <script src="marketplace.js"></script>
 </body>
 </html>
