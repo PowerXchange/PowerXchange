@@ -10,15 +10,12 @@
     <!-- Header -->
     <header>
         <nav>
-            <a href="index.html"><img src="logo.png" style="height: 100px; width: 220px;"></a>
+            <a href="index.html"><img src="logo.png" alt="PowerXchange Logo" style="height: 100px; width: 220px;"></a>
             <ul>
                 <li><a href="how-it-works.html">How it works</a></li>
-                <!--<li><a href="#benefits">Benefits</a></li>-->
                 <li><a href="installation-services.html">Installation</a></li>
                 <li><a href="marketplace.html">Marketplace</a></li>
                 <li><a href="offer-details.html">Offer Details</a></li>
-                <!--<li><a href="#contact">Contact</a></li>-->
-                
             </ul>
         </nav>
     </header>
@@ -26,38 +23,136 @@
     <!-- Marketplace Filters -->
     <section id="marketplace-filters">
         <h2>Find Energy Offers</h2>
-        <form>
-            <label for="energy-type" style="margin-top: 10px;">Energy Type:</label>
-            <select id="energy-type" name="energy-type" class="offer">
-                <option value="solar">Solar</option>
-                <option value="wind">Wind</option>
-                <option value="hydro">Hydro</option>
-            </select>
+        <form id="filter-form">
+            <div class="filter-group">
+                <label for="energy-type">Energy Type:</label>
+                <select id="energy-type" name="energy-type">
+                    <option value="">All Types</option>
+                    <option value="solar">Solar</option>
+                    <option value="wind">Wind</option>
+                    <option value="hydro">Hydro</option>
+                </select>
+            </div>
             
-            <label for="location" style="margin-top: 10px;">Location:</label>
-            <input type="text" id="location" name="location" placeholder="Enter location" class="offer">
-
-            <label for="price-range" style="margin-top: 10px;">Price Range:</label>
-            <input type="range" id="price-range" name="price-range" min="0" max="100" value="50" class="offer">
-
-            <a href="#" class="cta">Submit</a>
+            <div class="filter-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+            </div>
+            
+            <div class="filter-group">
+                <label for="price-range">Max Price (R/kWh):</label>
+                <input type="number" id="price-range" name="price-range" min="0" step="0.1" value="5">
+            </div>
+            
+            <button type="submit" class="cta">Apply Filters</button>
         </form>
     </section>
+
+    <!-- Sort Options -->
+    <div id="sort-options">
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by">
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Rating</option>
+        </select>
+    </div>
 
     <!-- Energy Offers List -->
     <section id="energy-offers">
         <h2>Available Energy Offers</h2>
-        <div class="offer">
-            <h3>Solar Energy Offer</h3>
-            <p>Location: Johannesburg</p>
-            <p>Price: R2.00/kWh</p>
-            <p>Seller: John Doe</p>
-            <p>Rating: ★★★★☆</p>
-            <a href="offer-details.html" class="view-details">View Details</a>
+        <div class="offers-grid">
+            <!-- Offer 1 -->
+            <div class="offer">
+                <h3>Solar Energy Offer</h3>
+                <p>Location: Johannesburg</p>
+                <p>Price: R2.00/kWh</p>
+                <p>Seller: John Doe</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 2 -->
+            <div class="offer">
+                <h3>Wind Energy Offer</h3>
+                <p>Location: Cape Town</p>
+                <p>Price: R1.80/kWh</p>
+                <p>Seller: Jane Smith</p>
+                <p>Rating: ★★★★★</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 3 -->
+            <div class="offer">
+                <h3>Hydro Energy Offer</h3>
+                <p>Location: Durban</p>
+                <p>Price: R2.20/kWh</p>
+                <p>Seller: Mike Johnson</p>
+                <p>Rating: ★★★☆☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 4 -->
+            <div class="offer">
+                <h3>Solar Energy Offer</h3>
+                <p>Location: Pretoria</p>
+                <p>Price: R1.90/kWh</p>
+                <p>Seller: Sarah Brown</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 5 -->
+            <div class="offer">
+                <h3>Wind Energy Offer</h3>
+                <p>Location: Port Elizabeth</p>
+                <p>Price: R2.10/kWh</p>
+                <p>Seller: David Wilson</p>
+                <p>Rating: ★★★★★</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 6 -->
+            <div class="offer">
+                <h3>Solar Energy Offer</h3>
+                <p>Location: Bloemfontein</p>
+                <p>Price: R2.05/kWh</p>
+                <p>Seller: Emma Davis</p>
+                <p>Rating: ★★★☆☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 7 -->
+            <div class="offer">
+                <h3>Hydro Energy Offer</h3>
+                <p>Location: East London</p>
+                <p>Price: R2.15/kWh</p>
+                <p>Seller: Chris Taylor</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 8 -->
+            <div class="offer">
+                <h3>Wind Energy Offer</h3>
+                <p>Location: Kimberley</p>
+                <p>Price: R1.95/kWh</p>
+                <p>Seller: Lisa Anderson</p>
+                <p>Rating: ★★★★★</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 9 -->
+            <div class="offer">
+                <h3>Solar Energy Offer</h3>
+                <p>Location: Nelspruit</p>
+                <p>Price: R2.25/kWh</p>
+                <p>Seller: Robert Martin</p>
+                <p>Rating: ★★★☆☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
+            <!-- Offer 10 -->
+            <div class="offer">
+                <h3>Hydro Energy Offer</h3>
+                <p>Location: Polokwane</p>
+                <p>Price: R2.30/kWh</p>
+                <p>Seller: Emily White</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="offer-details.html" class="view-details">View Details</a>
+            </div>
         </div>
-
-        <!-- Add more energy offers following the same structure as above -->
-
     </section>
 
     <!-- Pagination -->
@@ -66,9 +161,11 @@
         <a href="#" class="page-number">1</a>
         <a href="#" class="page-number">2</a>
         <a href="#" class="page-number">3</a>
+        <a href="#" class="page-number">4</a>
+        <a href="#" class="page-number">5</a>
         <a href="#" class="next-page">Next</a>
     </nav>
 
-
+    <script src="marketplace.js"></script>
 </body>
 </html>
