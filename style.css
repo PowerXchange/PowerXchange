@@ -100,7 +100,7 @@
         .cta {
             background-color: var(--powerx-primary);
             border: none;
-            color: white;
+            color: var(--powerx-primary);
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
