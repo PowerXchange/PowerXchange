@@ -23,7 +23,7 @@ PowerXchange stands out by integrating advanced zkEVM technology to enhance both
    - Skills in creating user-friendly interfaces tailored to the needs of users in emerging markets, focusing on accessibility and ease of use.
 
 
-## Support
+ 🙌 Support
 
 If you find our projects useful and would like to support our work, you can donate to our crypto wallet:
 - **ETH:** 0x399bA81713be9D862588D68725a24c52049637Fe  
