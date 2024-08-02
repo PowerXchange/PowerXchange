@@ -203,7 +203,7 @@
             padding: 1rem 2rem;
             font-size: 1.1rem;
             background-color: var(--powerx-primary);
-            color: #fff;
+            color: var(--powerx-primary);
             border: none;
             border-radius: 0.5rem;
             cursor: pointer;
