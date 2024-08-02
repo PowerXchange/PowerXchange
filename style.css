@@ -98,19 +98,22 @@
         }
 
         .cta {
-            display: inline-block;
-            background-color: var(--powerx-primary);
-            color: #fff;
+            background-color: var(--powerx-primary)
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
             text-decoration: none;
-            padding: 1rem 2rem; /* Increased padding */
-            border-radius: 0.5rem;
-            font-size: 1.3rem; /* Increased from 1.1rem */
-            font-weight: 500;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px; /* Rounded corners */
             transition: background-color 0.3s ease;
         }
 
         .cta:hover {
-            background-color: var(--powerx-secondary);
+            background-color: var(--powerx-primary);
         }
 
         /* How it Works */
