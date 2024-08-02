@@ -98,7 +98,7 @@
         }
 
         .cta {
-            background-color: var(--powerx-primary)
+            background-color: var(--powerx-primary);
             border: none;
             color: white;
             padding: 15px 32px;
