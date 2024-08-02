@@ -109,7 +109,6 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 4px; /* Rounded corners */
-            transition: background-color 0.3s ease;
         }
 
         .cta:hover {
