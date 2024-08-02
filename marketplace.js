@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "solar-panel.jpg",
             type: "Solar",
             location: "Johannesburg",
-            price: 2.00,
+            price: 0,000035 ETH,
             seller: "John Doe",
             rating: "★★★★☆",
         },
