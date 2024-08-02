@@ -97,23 +97,27 @@
             margin-bottom: 2rem;
         }
 
-        .cta {
-            background-color: var(--powerx-primary);
-            border: none;
-            color: var(--powerx-primary);
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px; /* Rounded corners */
-        }
+.cta {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        .cta:hover {
-            background-color: var(--powerx-primary);
-        }
+.cta:hover {
+    background-color: #45a049; /* Darker green */
+    color: white; /* Ensure text stays visible */
+    opacity: 1; /* Keep full opacity */
+    display: inline-block; /* Ensure display stays the same */
+}
+
 
         /* How it Works */
         #how-it-works {
