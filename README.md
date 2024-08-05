@@ -19,8 +19,8 @@ PowerXchange stands out by integrating advanced zkEVM technology to enhance both
 - **Mobile Integration:**
    - Proficiency in developing and integrating mobile applications with blockchain technology.
 
-- **User-Centered Design:**
-   - Skills in creating user-friendly interfaces tailored to the needs of users in emerging markets, focusing on accessibility and ease of use.
+- **User Centered Design:**
+   - Skills in creating user friendly interfaces, focusing on accessibility and ease of use.
 
 
  🙌 Support
