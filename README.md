@@ -11,16 +11,16 @@ PowerXchange stands out by integrating advanced zkEVM technology to enhance both
  👩🏻‍💻📓✍🏻💡 Our Skills
 
 - **Layer 2 Blockchain Solutions:**
-   - Expertise in zkEVM and other Layer 2 technologies to reduce transaction costs and increase throughput.
+   -- Expertise in zkEVM and other Layer 2 technologies to reduce transaction costs and increase throughput.
 
 - **Zero-Knowledge Proofs:**
-   - Advanced knowledge in cryptographic techniques to ensure transaction privacy and security.
+   -- Advanced knowledge in cryptographic techniques to ensure transaction privacy and security.
 
 - **Mobile Integration:**
-   - Proficiency in developing and integrating mobile applications with blockchain technology.
+   -- Proficiency in developing and integrating mobile applications with blockchain technology.
 
 - **User Centered Design:**
-   - Skills in creating user friendly interfaces, focusing on accessibility and ease of use.
+   -- Skills in creating user friendly interfaces, focusing on accessibility and ease of use.
 
 
  🙌 Support
