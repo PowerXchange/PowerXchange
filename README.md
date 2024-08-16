@@ -8,7 +8,7 @@
 PowerXchange stands out by integrating advanced zkEVM technology to enhance both privacy and transparency in energy trading. Our unique focus on community-driven energy projects empowers local communities to produce and trade renewable energy, ensuring equitable market access. Unlike competitors, PowerXchange offers real-time, tamper-proof energy production tracking, reducing costs by eliminating intermediaries and ensuring the authenticity of renewable energy credits. This novel approach combines blockchain technology with sustainable energy practices, promoting widespread adoption and trust within the Scroll ecosystem.  
 
 
- 👩🏻‍💻📓✍🏻💡 Our Skills
+ 👩🏻‍💻📓✍🏻💡 Our Skills:
 
 - **Layer 2 Blockchain Solutions:**
    -- Expertise in zkEVM and other Layer 2 technologies to reduce transaction costs and increase throughput.
