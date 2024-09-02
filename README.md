@@ -1,4 +1,4 @@
-🙋‍♂️ About Us:   
+🙋‍♂️ About us:   
 - **Building on scroll 📜**
 - **Passion:** Blockchain, FinTech, Crypto Trading.
 - **Experience:** Developing and integrating blockchain projects, crafting smart contracts, engaging in FinTech solutions, and trading digital assets.
